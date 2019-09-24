@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 17 - Complex Data - JavaScript Explained</title>
+  </head>
+  <body>
+    <h1>Complex Data Exercises</h1>
+    <p>Open the web inspector console to test.</p>
+  </body>
+  <script>
+    // Place your code below this line, before the closing script tag
+    let posts = [];
+    for ( let count = 1; count <= 3; count++ ) {
+      posts.push({
+        id: count,
+        title: `Test Post ${count}`,
+        slug: `test-post-${count}`,
+        excerpt: `Excerpt from post ${count}.`
+      });
+    }
+    console.table( posts );
+
+    // let posts = [
+    //   {
+    //     id: 1,
+    //     title: `Test Post 1`,
+    //     slug: `test-post-1`,
+    //     excerpt: `Excerpt from post 1.`
+    //   },
+    //   {
+    //     id: 1,
+    //     title: `Test Post 2`,
+    //     slug: `test-post-2`,
+    //     excerpt: `Excerpt from post 2.`
+    //   },
+    //   {
+    //     id: 3,
+    //     title: `Test Post 3`,
+    //     slug: `test-post-3`,
+    //     excerpt: `Excerpt from post 3.`
+    //   }
+    // ];
+  </script>
+</html>
